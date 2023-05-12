@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
 })
 
 document.querySelector("#busca").addEventListener("keyup", () => {
-  let busca = document.querySelector("busca").value
+  let busca = document.querySelector("#busca").value
   let tarefasFiltradas = tarefas.filter ((tarefa) => {
     return tarefa.titulo.toLowerCase().includes(busca)
   })
